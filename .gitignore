@@ -3,3 +3,4 @@ virtualenv
 emilsberzs/private.py
 __pycache__
 *.pyc
+*.exe
