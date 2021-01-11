@@ -1,4 +1,14 @@
-<html>
-<title>Emils Berzs</title>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Emils Berzs
+{% endblock title %}
+{% block content %}
+<h1>Welcome, there are great things yet to come</h1>
 
-</html>
+<ul>
+    {% for project in objects_list %}
+    <li>{{project.title}}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}

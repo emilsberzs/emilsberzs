@@ -15,7 +15,9 @@ class HomePageTest(unittest.TestCase):
         self.browser.get('http://localhost:8000')
 
         # Upon opening site, page title and header indicates that ir indeed is Emils portfolio website
-        self.assertIn('Emils', self.browser.title)
+        self.assertIn('Emils Berzs', self.browser.title)
+        header_text = self.browser.find_element_by_tag_name('h1').text
+        self.assertIn('Emils Berzs', header_text)
 
 
 if __name__ == '__main__':

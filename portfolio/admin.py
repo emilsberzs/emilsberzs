@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import Projects
 
-# Register your models here.
+
+@admin.register(Projects)
+class ProjectAdmin(admin.ModelAdmin):
+    fields = ('title', 'start_date', 'stack', 'description', 'repo')
