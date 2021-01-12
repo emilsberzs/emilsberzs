@@ -11,14 +11,14 @@
 
 <body>
     <header>
-        <h1>Emils Berzs</h1>
-        <div class="nav-grid">
-            <a href="{% url 'portfolio:project_list' %}" class="grid-1">Projects</a>
-            <a href="#" class="grid-2">Skills</a>
-            <a href="#" class="grid-3">History</a>
-            <a href="#" class="grid-4">Contacts</a>
-            <a href="{% url 'home_page' %}" class="home-button">Home</a>
-        </div>
+        <img src="/static/img/portfolio_logo.png" alt="logo" class="logo">
+        <ul class="nav-bar">
+            <li><a href="{% url 'portfolio:project_list' %}">Projects</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="{% url 'home_page' %}">Home</a></li>
+        </ul>
     </header>
     {% block content%}
     {% endblock content %}

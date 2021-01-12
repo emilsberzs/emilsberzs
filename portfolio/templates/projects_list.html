@@ -6,14 +6,13 @@ Projects
 
 {% block content %}
 <h1>All projects</h1>
-<ul>
-    {% for project in projects %}
-    <li>
-        {{project.title}}<br>
-        {{project.description}}<br>
-        <a href="{{project.get_absolute_url}}">Details</a>
-
-    </li>
-    {% endfor %}
-</ul>
+<div class="projects">
+    <ul>
+        {% for project in projects %}
+        <li>{{project.title}}</li>
+        <li>{{project.description}}</li>
+        <li><a href="{{project.get_absolute_url}}">Details</a></li>
+        {% endfor %}
+    </ul>
+</div>
 {% endblock content %}
