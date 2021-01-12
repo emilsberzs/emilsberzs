@@ -7,10 +7,11 @@ Projects
 {% block content %}
 <h1>All projects</h1>
 <ul>
-    {% for project in object_list %}
+    {% for project in projects %}
     <li>
         {{project.title}}<br>
         {{project.description}}<br>
+        <a href="{{project.get_absolute_url}}">Details</a>
 
     </li>
     {% endfor %}
