@@ -5,12 +5,12 @@ Skills
 {% endblock title %}
 
 {% block content %}
-<h1>Development skills</h1>
+<h1 class="skills-title">Development skills</h1>
 <div class="skills-list">
     {% for skill in skills %}
     <div class="skill">
-        <img src="{{skill.logo.url}}" alt="{{skill.title}} logo" width="300" height="300">
         <h1>{{skill.title}}</h1>
+        <img src="{{skill.logo.url}}" alt="{{skill.title}} logo" width="100" height="100" class="skill-image">
         <p>{{skill.description}}</p>
     </div>
     {% endfor %}

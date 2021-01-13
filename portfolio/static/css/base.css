@@ -1,5 +1,5 @@
 body {
-    background-color: #a1a1a1 ;
+    background-color: #ffffff ;
 }
 
 h1 {
@@ -35,20 +35,45 @@ h1 {
 }
 
 .nav-bar a:hover{
-    background-color: #a1a1a1 ;
+    background-color: #FFDf6C ;
     ;
   }
 
 
 .projects {
-    display:inline-grid;
-    gap:10% 10%;
-    grid-template-rows: 30% 30%;
-    grid-template-columns: 30% 30%;
-    grid-auto-rows: 30%;
-    grid-auto-columns: 30%;
-    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px;
+    justify-items: center;
+
+
+
+}
+
+.skills-list {
     
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
 
+.skill-image {
+    place-self: center;
+    
+}
 
+.skill {
+    justify-content: center;
+}
+.skills-title {
+    font-size: xx-large;
+}
+
+.logo-space {
+    background-color:  #68707B;
+}
+
+.navigation-bar {
+    background-color: #FFDf6C;
 }
